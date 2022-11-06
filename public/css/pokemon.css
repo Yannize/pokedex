@@ -20,7 +20,8 @@ h1 {
     font-size: 3rem;
     padding: 2rem 0 1rem;
     text-align: center;
-    text-shadow: 6px 6px 0 rgb(126, 32, 3);
+    text-shadow: 4px 4px 0 rgb(126, 32, 3);
+    font-size: 2.4rem;
 }
 
 
