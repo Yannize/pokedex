@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-:root {
+root {
     font-size: 16px;
 }
 
@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    padding: 2rem 0 1rem;
+    padding: 1rem 0 1rem;
     text-align: center;
     text-shadow: 4px 4px 0 rgb(126, 32, 3);
     font-size: 2.4rem;
@@ -35,7 +35,7 @@ nav a {
     text-shadow: 0 0 2px rgba(255, 255, 255, 0);
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0.5rem 2rem;
     transition: 0.1s;
 }
