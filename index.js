@@ -43,6 +43,6 @@ app.get('/types/:type', (req, res) => {
     res.render('pokedex.ejs', { title: pokemonType, pokemons: pokemonsFiltered, addLeadingZeros, filtred: true, home: true })
 })
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
     console.log(`🚀 server running on http://localhost:${PORT}`);
 });
