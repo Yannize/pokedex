@@ -1,0 +1,31 @@
+<%- include('partials/header.ejs', {title}) %>
+
+    <% if (filtred) { %>
+        <a class="prev" href="/">Retour au Pokedex</a>
+        <% } %>
+            <main>
+                <ul class="grid">
+                    <% pokemons.forEach(pokemon=> {%>
+                        <li class="cards">
+                            <a href="/pokemon/<%= pokemon.id %>">
+                                <h2 class="cards__title">
+                                    <span class="cards__title__pokemon-nbr">
+                                        #<%= pokemon.id %>
+                                    </span>
+                                    <strong class="cards__title__pokemon-name">
+                                        <%= pokemon.name.french %>
+                                    </strong>
+                                </h2>
+                                <img src="/images/<%= addLeadingZeros(pokemon.id) %>.png"
+                                    alt="Pokemon <%= pokemon.id %> : <%= pokemon.name.french %>">
+
+                            </a>
+                        </li>
+                        <% }) %>
+                </ul>
+            </main>
+
+
+            </body>
+
+            </html>

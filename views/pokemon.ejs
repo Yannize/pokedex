@@ -1,0 +1,62 @@
+<%- include('partials/header.ejs', {title: `#${pokemon.id} ${pokemon.name.french}`}) %>
+
+    <nav>
+        <a href="/pokemon/<%= pokemon.id <= 1 ? 809 : (pokemon.id - 1) %>">Précédent</a>
+        <a href="/">Retour au Pokedex</a>
+        <a href="/pokemon/<%= pokemon.id >= 809 ? 1 : (pokemon.id + 1) %>">Suivant</a>
+
+    </nav>
+    <main>
+        <div class="img-container">
+            <img src="/images/<%= addLeadingZeros(pokemon.id) %>.png" alt="">
+        </div>
+        <div class="stats-container">
+            <h2 class="stats-container__title">Stats</h2>
+            <div class="stats-container__types">
+                <span class="stats-container__types__name">Types :</span>
+                <ul>
+                    <% pokemon.type.forEach(type=> { %>
+                        <li class="types <%= type %>">
+                            <a href="/types/<%= type %>">
+                                <%= type %>
+                            </a>
+                        </li>
+                        <% }) %>
+                </ul>
+            </div>
+            <div class="stats-container__stats">
+                <ul>
+                    <%for (const [key, value] of Object.entries(pokemon.base)) { %>
+                        <li>
+                            <span class='stats-container__stats__name'>
+                                <%= key %>
+                            </span>
+                            <div class="stats-container__stats__display">
+                                <div class="stats-container__stats__display stats-container__stats__display--percent"
+                                    style="width:<%= value %>%; border-top-right-radius:<%= value < 100 ? " 0px"
+                                    : "40px" %>; border-bottom-right-radius:<%= value < 100 ? "0px" : "40px" %>"></div>
+                            </div>
+                            <span class='stats-container__stats__value'>
+                                <%= value %>
+                            </span>
+                        </li>
+
+                        <% } %>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>

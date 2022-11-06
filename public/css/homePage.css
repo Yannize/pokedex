@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(162, 93, 81);
+    padding: 2rem;
+
+    font-family: sans-serif;
+    color: white;
+}
+
+.prev {
+    font-size: 1.4rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    display: block;
+    width: fit-content;
+    transition: 0.1s;
+}
+
+.prev:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 4px white;
+}
+
+h1 {
+    font-size: 6rem;
+    padding: 2rem 0;
+    text-align: center;
+    text-shadow: 8px 8px 0 rgb(126, 32, 3);
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+.cards {
+    border: 2px solid rgb(183, 183, 183);
+    border-radius: 10px;
+
+    background-color: rgb(133, 43, 28);
+
+    transition: all 0.3s
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    border: 4px solid #8f3f3100;
+    background-color: rgb(228, 228, 228);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.416);
+}
+
+.cards:hover a {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.cards:hover .cards__title__pokemon-nbr {
+    color: rgb(227, 63, 34);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.cards__title {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0 2rem;
+}
+
+.cards__title__pokemon-nbr {
+    color: rgb(179, 179, 179);
+}
+
+.cards img {
+    width: 100%;
+}

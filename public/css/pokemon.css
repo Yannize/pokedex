@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: rgb(162, 93, 81);
+    padding: 2rem;
+
+    font-family: sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+    padding: 2rem 0 1rem;
+    text-align: center;
+    text-shadow: 6px 6px 0 rgb(126, 32, 3);
+}
+
+
+nav {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0);
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0.5rem 2rem;
+    transition: 0.1s;
+}
+
+nav a:hover {
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+    transform: scale(1.1);
+}
+
+li {
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+    border: 6px solid rgb(228, 228, 228);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.605),
+        8px 8px 8px rgba(0, 0, 0, 0.34);
+}
+
+.img-container {
+    width: 40%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4e4e4;
+}
+
+.img-container img {
+    width: 100%;
+}
+
+.stats-container {
+    width: 60%;
+    padding: 2rem;
+    background-color: #7b3d32;
+}
+
+.stats-container__title {
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.stats-container__types {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.stats-container__types__name {
+    font-size: 1.4rem;
+}
+
+.stats-container__types ul {
+    margin-left: 1rem;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.stats-container__stats ul li {
+    display: flex;
+    align-items: center;
+}
+
+
+.stats-container__types ul li a {
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+    border: 1px solid white;
+    border-radius: 10px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    display: block;
+    box-shadow: 0 0 0 1px white, 0 0 0 2px transparent;
+    transition: 0.2s;
+}
+
+.stats-container__types ul li a:hover {
+    box-shadow: 0 0 0 2px white;
+    color: rgb(255, 255, 255);
+}
+
+.stats-container__stats__name {
+    width: 20%;
+    min-width: 120px;
+    padding: 0.6rem;
+    font-size: 1rem;
+}
+
+.stats-container__stats__display {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(90, 13, 7);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.stats-container__stats__display--percent {
+    background-color: rgb(225, 225, 225);
+    width: 20px;
+}
+
+.stats-container__stats__value {
+    margin-left: 0.4rem;
+}
+
+.types {}
+
+.Grass {
+    background-color: rgb(17, 123, 17);
+}
+
+.Normal {
+    background-color: #A8A877;
+}
+
+.Fighting {
+    background-color: #78c850;
+}
+
+.Flying {
+    background-color: #a890f0;
+}
+
+.Poison {
+    background-color: #a040a0;
+}
+
+.Ground {
+    background-color: #e0c068;
+}
+
+.Rock {
+    background-color: #b8a038;
+}
+
+.Bug {
+    background-color: #a8b820;
+}
+
+.Ghost {
+    background-color: #705898;
+}
+
+.Steel {
+    background-color: #b8b8d0;
+}
+
+.Fire {
+    background-color: #f08030;
+}
+
+.Water {
+    background-color: #6890f0;
+}
+
+.Electric {
+    background-color: #f8d030;
+}
+
+.Psychic {
+    background-color: #f85888;
+}
+
+.Ice {
+    background-color: #98d6d6;
+}
+
+.Dragon {
+    background-color: #7038f8;
+}
+
+.Dark {
+    background-color: #705848;
+}
+
+.Fairy {
+    background-color: #f0b6bc;
+}
