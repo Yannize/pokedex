@@ -11,3 +11,5 @@ router.get('/types/:type', controller.getPokemonsFilteredByType)
 
 // export de l'objet router
 module.exports = router
+
+// simple test
